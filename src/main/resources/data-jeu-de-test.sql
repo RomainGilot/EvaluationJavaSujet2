@@ -25,3 +25,12 @@ INSERT INTO categorie_quizz (quizz_id, categorie_id) VALUES
 INSERT INTO question (texte, quizz_id) VALUES
 ("Comment s'appelle le 1er pokemon de sacha", 1),
 ("Combien y a t-il de pokemon dans la première génération", 1);
+
+INSERT INTO `response_possible` (correct, question_id, text) VALUES
+(b'1', '1', 'Pikachu'), (b'1', '2', '10'), (b'0', '2', '12');
+
+INSERT INTO response_utilisateur (utilisateur_id, response_possible_id) VALUES
+(1, 1),
+(1, 2),
+(2, 1),
+(2, 2);
